@@ -7,7 +7,8 @@ npm init for python
 
 # Usage
 
-```$ pipinit
+```
+$ pipinit
 $ Name of the project(project):
 $ Current version(1.0.0):
 $ Short description:

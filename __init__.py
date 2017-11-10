@@ -1,4 +1,4 @@
-from os import system, path, getcwd
+from os import path, getcwd
 
 import click
 
@@ -13,6 +13,11 @@ def inputWithDefault(prompt, default=''):
 
 @click.command()
 def cli():
+
+    if path.isfile(getcwd() + '/setup.py'):
+        print('setup.py exists, will not overwrite')
+        return
+
     dirName = getcwd().split('/')[-1]
     name = inputWithDefault('Name of the project({}): '.format(dirName),
                             dirName)
