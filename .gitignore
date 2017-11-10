@@ -1,0 +1,9 @@
+.venv/
+
+dist/
+
+pipinit.egg-info/
+
+build/
+
+Pipfile
